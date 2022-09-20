@@ -1,0 +1,184 @@
+<h1>ISH Example 1: trivial segments, multi-paragraph</h1>
+
+<h2>Texto</h2>
+
+<p id="p1" onmouseover="hilite_p1()" onmouseout="lolite_p1()">Os Muçulmanos influenciaram vários aspetos da vida dos povos da Península Ibérica:
+
+<p id="p2" onmouseover="hilite_p2()" onmouseout="lolite_p2()">· introduziram a cultura de novas plantas
+
+<p id="p3" onmouseover="hilite_p3()" onmouseout="lolite_p3()">· introduziram novos processos de aproveitamento da água e rega dos campos
+
+<p id="p4" onmouseover="hilite_p4()" onmouseout="lolite_p4()">Os povos da Península Ibérica passaram a utilizar novas palavras de origem árabe. Algumas delas ainda hoje se usam: palavras começadas por al: algarismo, alguidar, alcatifa, etc.
+
+<p id="p5" onmouseover="hilite_p5()" onmouseout="lolite_p5()">Outras palavras: azenha, azeite, laranja, picota, etc.
+
+
+<h2>Anotações</h2>
+
+<p id="a1"     onmouseover="hilite_a1()"     onmouseout="lolite_a1()"    title="I am an annotation"> _EXP_CONS
+<p id="a1_1"   onmouseover="hilite_a1_1()"   onmouseout="lolite_a1_1()"  > __Título
+<p id="a1_2"   onmouseover="hilite_a1_2()"   onmouseout="lolite_a1_2()"  > __Fenómeno {p1}
+<p id="a1_3"   onmouseover="hilite_a1_3()"   onmouseout="lolite_a1_3()"  > __Explicação
+<p id="a1_3_1" onmouseover="hilite_a1_3_1()" onmouseout="lolite_a1_3_1()"> ___consequência 1 {p2}
+<p id="a1_3_2" onmouseover="hilite_a1_3_2()" onmouseout="lolite_a1_3_2()"> ___consequência 2 {p3}
+<p id="a1_3_3" onmouseover="hilite_a1_3_3()" onmouseout="lolite_a1_3_3()"> ___consequência 3 {p4,p5}
+
+
+<script>
+
+function hilite_p1()
+{
+   document.getElementById("p1").style.backgroundColor = "silver";
+   document.getElementById("a1_2").style.backgroundColor = "silver";
+}
+function lolite_p1()
+{
+   document.getElementById("p1").style.backgroundColor = "white";
+   document.getElementById("a1_2").style.backgroundColor = "white";
+}
+
+
+function hilite_p2()
+{
+   document.getElementById("p2").style.backgroundColor = "silver";
+   document.getElementById("a1_3_1").style.backgroundColor = "silver";
+}
+function lolite_p2()
+{
+   document.getElementById("p2").style.backgroundColor = "white";
+   document.getElementById("a1_3_1").style.backgroundColor = "white";
+}
+
+
+function hilite_p3()
+{
+   document.getElementById("p3").style.backgroundColor = "silver";
+   document.getElementById("a1_3_2").style.backgroundColor = "silver";
+}
+function lolite_p3()
+{
+   document.getElementById("p3").style.backgroundColor = "white";
+   document.getElementById("a1_3_2").style.backgroundColor = "white";
+}
+
+
+function hilite_p4()
+{
+   document.getElementById("p4").style.backgroundColor = "silver";
+   document.getElementById("p5").style.backgroundColor = "silver";
+   document.getElementById("a1_3_3").style.backgroundColor = "silver";
+}
+function lolite_p4()
+{
+   document.getElementById("p4").style.backgroundColor = "white";
+   document.getElementById("p5").style.backgroundColor = "white";
+   document.getElementById("a1_3_3").style.backgroundColor = "white";
+}
+
+
+function hilite_p5()
+{
+   document.getElementById("p4").style.backgroundColor = "silver";
+   document.getElementById("p5").style.backgroundColor = "silver";
+   document.getElementById("a1_3_3").style.backgroundColor = "silver";
+}
+function lolite_p5()
+{
+   document.getElementById("p4").style.backgroundColor = "white";
+   document.getElementById("p5").style.backgroundColor = "white";
+   document.getElementById("a1_3_3").style.backgroundColor = "white";
+}
+
+
+function hilite_a1()
+{
+   document.getElementById("a1").style.backgroundColor = "silver";
+   hilite_a1_1();
+   hilite_a1_2();
+   hilite_a1_3();
+}
+function lolite_a1()
+{
+   document.getElementById("a1").style.backgroundColor = "white";
+   lolite_a1_1();
+   lolite_a1_2();
+   lolite_a1_3();
+}
+
+
+function hilite_a1_1()
+{
+   document.getElementById("a1_1").style.backgroundColor = "silver";
+}
+function lolite_a1_1()
+{
+   document.getElementById("a1_1").style.backgroundColor = "white";
+}
+
+
+function hilite_a1_2()
+{
+   document.getElementById("a1_2").style.backgroundColor = "silver";
+   document.getElementById("p1").style.backgroundColor = "silver";
+}
+function lolite_a1_2()
+{
+   document.getElementById("a1_2").style.backgroundColor = "white";
+   document.getElementById("p1").style.backgroundColor = "white";
+}
+
+
+function hilite_a1_3()
+{
+   document.getElementById("a1_3").style.backgroundColor = "silver";
+   hilite_a1_3_1();
+   hilite_a1_3_2();
+   hilite_a1_3_3();
+}
+function lolite_a1_3()
+{
+   document.getElementById("a1_3").style.backgroundColor = "white";
+   lolite_a1_3_1();
+   lolite_a1_3_2();
+   lolite_a1_3_3();
+}
+
+
+function hilite_a1_3_1()
+{
+   document.getElementById("a1_3_1").style.backgroundColor = "silver";
+   document.getElementById("p2").style.backgroundColor = "silver";
+}
+function lolite_a1_3_1()
+{
+   document.getElementById("a1_3_1").style.backgroundColor = "white";
+   document.getElementById("p2").style.backgroundColor = "white";
+}
+
+
+function hilite_a1_3_2()
+{
+   document.getElementById("a1_3_2").style.backgroundColor = "silver";
+   document.getElementById("p3").style.backgroundColor = "silver";
+}
+function lolite_a1_3_2()
+{
+   document.getElementById("a1_3_2").style.backgroundColor = "white";
+   document.getElementById("p3").style.backgroundColor = "white";
+}
+
+
+function hilite_a1_3_3()
+{
+   document.getElementById("a1_3_3").style.backgroundColor = "silver";
+   document.getElementById("p4").style.backgroundColor = "silver";
+   document.getElementById("p5").style.backgroundColor = "silver";
+}
+function lolite_a1_3_3()
+{
+   document.getElementById("a1_3_3").style.backgroundColor = "white";
+   document.getElementById("p4").style.backgroundColor = "white";
+   document.getElementById("p5").style.backgroundColor = "white";
+}
+
+</script>
