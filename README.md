@@ -1,6 +1,6 @@
-# ISH_Prototype
-ISH (Interactive Synchronised Highlighting) prototype
+# Interactive Synchronised Highlighting
+by Mário Amado Alves
 
-Model and implementation prototype of visualization of linguistic annotations of text.
+ISH is a model of visualization of linguistic annotations of text. See Notes.
 
-Live demonstration and notes at: https://marius-linguist.github.io/ISH_Prototype/
+Prototype live at: https://marius-linguist.github.io/ISH_Prototype/
